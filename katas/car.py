@@ -44,6 +44,7 @@ if __name__ == "__main__":
 
     my_car.rent_car()
 
+
     print(my_car.is_rented())   # True
     print(my_car.return_car())
 

@@ -14,12 +14,24 @@ class Dog:
     def __init__(self, name, breed):
         self.name = name
         self.breed = breed
+        self.position = "sitting"
 
-    def bark(self):
-        print("Woof! Woof!")
+
+    def bark(self, n=2):
+        for i in range(n):
+            print("Woof!")
 
     def describe(self):
-        print(f"I'm {self.name}, a {self.breed}.")
+        print(f"I'm {self.name}, a {self.breed}. i'm {self.position}")
+        
+    def sit(self):
+        self.position = "sitting"
+    
+    def jump(self):
+        self.position = "jumping"
+    
+    def stand(self):
+        self.position = "standing"
 
 
 if __name__ == "__main__":
@@ -27,3 +39,7 @@ if __name__ == "__main__":
 
     my_dog.bark()
     my_dog.describe()
+
+
+    
+    
